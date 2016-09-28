@@ -43,10 +43,11 @@
   "dependencies": {
     "bluebird": "3.2.1",
     "debug": "2.2.0",
-    "lodash": "4.2.1"
+    "lodash": "4.2.1",
+    "loopback-context": "^1.0.0"
   },
   "peerDependencies": {
-    "loopback": ">=2.25.0"
+    "loopback": ">=3.0.0"
   },
   "optionalDependencies": {
     "loopback-component-explorer": "2.3.0"

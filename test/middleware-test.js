@@ -1,5 +1,6 @@
 'use strict';
 
+const LoopBackContext = require('loopback-context');
 const path = require('path');
 const chai = require('chai');
 const expect = chai.expect;
@@ -23,8 +24,8 @@ describe('User Context Middleware', function() {
 
   describe('With user in loopback context', function() {
     it('should return the user', function() {
-      app.loopback.runInContext(function() {
-        const loopbackContext = app.loopback.getCurrentContext();
+      LoopBackContext.runInContext(function() {
+        const loopbackContext = LoopBackContext.getCurrentContext();
         const user = {
           id: 'generalUser',
           username: 'generalUser',
