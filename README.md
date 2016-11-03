@@ -35,12 +35,11 @@ An 'access' [Operation Hook](https://docs.strongloop.com/display/public/LB/Opera
 
 4. Create a middleware.json file in your server folder (if you don't already have one).
 
-5. Ensure that you enable the `loopback#context`, `loopback#token` middleware early in your middleware chain.
+5. Ensure that you enable the `loopback#token` middleware early in your middleware chain.
 
   ```json
   {
     "initial:before": {
-      "loopback#context": {},
       "loopback#token": {}
     },
   }
